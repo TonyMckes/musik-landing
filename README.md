@@ -1,4 +1,4 @@
-# GameStack - Practice Project
+# Musik Landing - Practice Project
 
 Frontend built as practice, For this project I used [Vite](https://vitejs.dev/) as build tools and [Splide](https://splidejs.com/) for all the slides.
 

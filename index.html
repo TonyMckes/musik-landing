@@ -17,12 +17,14 @@
   <body>
     <main class="">
       <section
-        class="flex flex-col items-center justify-between h-screen bg-no-repeat bg-cover bg-[url('/images/background.png')]"
+        class="flex flex-col items-center justify-between h-screen bg-no-repeat bg-cover bg-[url('/images/background.webp')]"
       >
         <nav
           class="flex items-center justify-between w-4/5 text-sm font-semibold text-white"
         >
-          <a class="grow" href="#"><img src="/logo.svg" alt="" /></a>
+          <a class="grow" href="#">
+            <img loading="lazy" src="/logo.svg" alt="" />
+          </a>
           <ul class="flex items-center gap-8">
             <li><a class="" href="#">Home</a></li>
             <li><a class="" href="#">Speakers</a></li>
@@ -151,12 +153,18 @@
       </section>
       <section class="flex items-center w-4/5 mx-auto">
         <div class="relative w-1/2 mr-20">
-          <!-- <img class="object-cover" src="/images/images-photos.png" alt="" /> -->
-          <img class="mt-14 ml-14" src="/images/img-photo.png" alt="" />
+          <!-- <img loading="lazy"  class="object-cover" src="/images/images-photos.webp" alt="" /> -->
           <img
+            loading="lazy"
+            class="mt-14 ml-14"
+            src="/images/img-photo.webp"
+            alt=""
+          />
+          <img
+            loading="lazy"
             aria-hidden="true"
             class="absolute top-0 -z-10"
-            src="/images/img-hands.png"
+            src="/images/img-hands.webp"
             alt=""
           />
         </div>
@@ -202,7 +210,9 @@
             ></span>
           </button>
         </div>
-        <div class="w-3/5"><img src="/portail/Images.png" alt="" /></div>
+        <div class="w-3/5">
+          <img loading="lazy" src="/portail/Images.webp" alt="" />
+        </div>
       </section>
       <section class="h-screen bg-gradient-to-b from-blue/5 to-transparent">
         <div class="w-4/5 mx-auto">
@@ -229,7 +239,12 @@
 
                 <td class="px-4 py-8 rounded-br-lg whitespace-nowrap">
                   <div class="flex items-center gap-2">
-                    <img class="h-14" src="/avatars-sm/Avatar-2.png" alt="" />
+                    <img
+                      loading="lazy"
+                      class="h-14"
+                      src="/avatars-sm/Avatar-2.webp"
+                      alt=""
+                    />
                     <div class="">
                       <h5 class="">Yui Ronald</h5>
                       <h6 class="font-normal text-black/50">
@@ -258,7 +273,12 @@
 
                 <td class="px-4 py-8 space-y-8 rounded-br-lg whitespace-nowrap">
                   <div class="flex items-center gap-2">
-                    <img class="h-14" src="/avatars-sm/Avatar-1.png" alt="" />
+                    <img
+                      loading="lazy"
+                      class="h-14"
+                      src="/avatars-sm/Avatar-1.webp"
+                      alt=""
+                    />
                     <div>
                       <h5 class="">Bob John</h5>
                       <h6 class="font-normal text-black/50">
@@ -267,7 +287,12 @@
                     </div>
                   </div>
                   <div class="flex items-center gap-2">
-                    <img class="h-14" src="/avatars-sm/Avatar-2.png" alt="" />
+                    <img
+                      loading="lazy"
+                      class="h-14"
+                      src="/avatars-sm/Avatar-2.webp"
+                      alt=""
+                    />
                     <div>
                       <h5 class="">Yui Ronald</h5>
                       <h6 class="font-normal text-black/50">
@@ -276,7 +301,12 @@
                     </div>
                   </div>
                   <div class="flex items-center gap-2">
-                    <img class="h-14" src="/avatars-sm/Avatar-3.png" alt="" />
+                    <img
+                      loading="lazy"
+                      class="h-14"
+                      src="/avatars-sm/Avatar-3.webp"
+                      alt=""
+                    />
                     <div>
                       <h5 class="">Emma Satoshi</h5>
                       <h6 class="font-normal text-black/50">
@@ -301,7 +331,12 @@
 
                 <td class="px-4 py-8 space-y-8 rounded-br-lg whitespace-nowrap">
                   <div class="flex items-center gap-2">
-                    <img class="h-14" src="/avatars-sm/Avatar-4.png" alt="" />
+                    <img
+                      loading="lazy"
+                      class="h-14"
+                      src="/avatars-sm/Avatar-4.webp"
+                      alt=""
+                    />
                     <div>
                       <h5 class="">Sasha Jackson</h5>
                       <h6 class="font-normal text-black/50">
@@ -310,7 +345,12 @@
                     </div>
                   </div>
                   <div class="flex items-center gap-2">
-                    <img class="h-14" src="/avatars-sm/Avatar-5.png" alt="" />
+                    <img
+                      loading="lazy"
+                      class="h-14"
+                      src="/avatars-sm/Avatar-5.webp"
+                      alt=""
+                    />
                     <div>
                       <h5 class="">Diana Brock</h5>
                       <h6 class="font-normal text-black/50">
@@ -383,14 +423,14 @@
       <section class="w-4/5 mx-auto">
         <h2 class="text-4xl font-bold">Our Sponsors</h2>
         <ul class="grid grid-cols-4 gap-8">
-          <li><img src="/logos/Img.svg" alt="" /></li>
-          <li><img src="/logos/Img-1.svg" alt="" /></li>
-          <li><img src="/logos/Img-2.svg" alt="" /></li>
-          <li><img src="/logos/Img-3.svg" alt="" /></li>
-          <li><img src="/logos/Img-4.svg" alt="" /></li>
-          <li><img src="/logos/Img-5.svg" alt="" /></li>
-          <li><img src="/logos/Img-6.svg" alt="" /></li>
-          <li><img src="/logos/Img-7.svg" alt="" /></li>
+          <li><img loading="lazy" src="/logos/Img.svg" alt="" /></li>
+          <li><img loading="lazy" src="/logos/Img-1.svg" alt="" /></li>
+          <li><img loading="lazy" src="/logos/Img-2.svg" alt="" /></li>
+          <li><img loading="lazy" src="/logos/Img-3.svg" alt="" /></li>
+          <li><img loading="lazy" src="/logos/Img-4.svg" alt="" /></li>
+          <li><img loading="lazy" src="/logos/Img-5.svg" alt="" /></li>
+          <li><img loading="lazy" src="/logos/Img-6.svg" alt="" /></li>
+          <li><img loading="lazy" src="/logos/Img-7.svg" alt="" /></li>
         </ul>
       </section>
       <section
@@ -421,7 +461,7 @@
                 text ever since the 1500s, when an unknown printer took a galley
                 of type and scrambled it to make a type specimen book.
               </p>
-              <img src="/avatars/Avatar.png" alt="" />
+              <img loading="lazy" src="/avatars/Avatar.webp" alt="" />
               <h5 class="text-xl font-bold">Ellie James</h5>
               <a class="text-blue" href="#">ipsum.com</a>
             </li>
@@ -438,7 +478,7 @@
                 text ever since the 1500s, when an unknown printer took a galley
                 of type and scrambled it to make a type specimen book.
               </p>
-              <img src="/avatars/Avatar-1.png" alt="" />
+              <img loading="lazy" src="/avatars/Avatar-1.webp" alt="" />
               <h5 class="text-xl font-bold">Johnny Doe</h5>
               <a class="text-blue" href="#">ipsum.com</a>
             </li>
@@ -455,7 +495,7 @@
                 text ever since the 1500s, when an unknown printer took a galley
                 of type and scrambled it to make a type specimen book.
               </p>
-              <img src="/avatars/Avatar-2.png" alt="" />
+              <img loading="lazy" src="/avatars/Avatar-2.webp" alt="" />
               <h5 class="text-xl font-bold">Myne Barack</h5>
               <a class="text-blue" href="#">ipsum.com</a>
             </li>
@@ -481,7 +521,12 @@
             <li
               class="relative !border-none splide__slide [&:is(.is-active,.is-prev,.is-next)]:opacity-100 opacity-50 transition-opacity space-y-4"
             >
-              <img class="aspect-square" src="/music/Img.png" alt="" />
+              <img
+                loading="lazy"
+                class="aspect-square"
+                src="/music/Img.webp"
+                alt=""
+              />
               <div class="space-x-4 font-bold">
                 <button>
                   <span
@@ -514,7 +559,12 @@
             <li
               class="relative !border-none splide__slide [&:is(.is-active,.is-prev,.is-next)]:opacity-100 opacity-50 transition-opacity space-y-4"
             >
-              <img class="aspect-square" src="/music/Img-1.png" alt="" />
+              <img
+                loading="lazy"
+                class="aspect-square"
+                src="/music/Img-1.webp"
+                alt=""
+              />
               <div class="space-x-4 font-bold">
                 <button>
                   <span
@@ -547,7 +597,12 @@
             <li
               class="relative !border-none splide__slide [&:is(.is-active,.is-prev,.is-next)]:opacity-100 opacity-50 transition-opacity space-y-4"
             >
-              <img class="aspect-square" src="/music/Img-2.png" alt="" />
+              <img
+                loading="lazy"
+                class="aspect-square"
+                src="/music/Img-2.webp"
+                alt=""
+              />
               <div class="space-x-4 font-bold">
                 <button>
                   <span
@@ -580,7 +635,12 @@
             <li
               class="relative !border-none splide__slide [&:is(.is-active,.is-prev,.is-next)]:opacity-100 opacity-50 transition-opacity space-y-4"
             >
-              <img class="aspect-square" src="/music/Img-3.png" alt="" />
+              <img
+                loading="lazy"
+                class="aspect-square"
+                src="/music/Img-3.webp"
+                alt=""
+              />
               <div class="space-x-4 font-bold">
                 <button>
                   <span
@@ -613,7 +673,12 @@
             <li
               class="relative !border-none splide__slide [&:is(.is-active,.is-prev,.is-next)]:opacity-100 opacity-50 transition-opacity space-y-4"
             >
-              <img class="aspect-square" src="/music/Img-4.png" alt="" />
+              <img
+                loading="lazy"
+                class="aspect-square"
+                src="/music/Img-4.webp"
+                alt=""
+              />
               <div class="space-x-4 font-bold">
                 <button>
                   <span
@@ -712,7 +777,9 @@
       </section>
       <footer class="bg-black">
         <div class="w-4/5 py-10 mx-auto">
-          <a class="grow" href="#"><img src="/logo.svg" alt="" /></a>
+          <a class="grow" href="#">
+            <img loading="lazy" src="/logo.svg" alt="" />
+          </a>
 
           <div class="flex mt-10">
             <nav>

@@ -2,52 +2,77 @@
 
 Frontend built as practice, For this project I used [Vite](https://vitejs.dev/) as build tools and [Splide](https://splidejs.com/) for all the slides.
 
-> The design is not my own, please take a look at the [acknowledgments](#acknowledgments).
+![Web Design](https://user-images.githubusercontent.com/78808163/219480137-582ce652-1d51-4187-9804-cb5008169cab.png)
 
-## Tech Stack
+> The design is not my own, please take a look at the [acknowledgements](#acknowledgements).
+
+---
+
+## Technologies Used
 
 - Markup: HTML
 - Styling: Tailwind CSS
 - Language: JavaScript
 - Deployment: Vercel
 
-## Demo
-
-![Web Design](https://user-images.githubusercontent.com/78808163/219480137-582ce652-1d51-4187-9804-cb5008169cab.png)
-
 ## Getting Started
 
-These instructions will help you run the project on your local machine for development purposes.
+These instructions will help you install and run the project on your local machine for development.
 
-### Prerequisite
+### Prerequisites
 
-Make sure to have everything that is required before you try to run the project.
+Before you run the project, make sure that you have the following tools and software installed on your computer:
 
-- [Node.js v16 or above](https://nodejs.org/en/download/)
+- Text editor/IDE (e.g., VS Code, Sublime Text, Atom)
+- [Git](https://git-scm.com/downloads)
+- [Node.js](https://nodejs.org/en/download/) `v16.16.0+`
+- [NPM](https://www.npmjs.com/) (usually included with Node.js)
 
 ### Installation
 
-Install all dependencies required for the project with NPM (Node Package Manager).
+To install the project on your computer, follow these steps:
+
+1. Clone the repository to your local machine.
+
+   ```bash
+   git clone https://github.com/TonyMckes/musik-landing.git
+   ```
+
+2. Navigate to the project directory.
+
+   ```bash
+   cd musik-landing
+   ```
+
+3. Install project dependencies by running the command:
+
+   ```bash
+   npm install
+   ```
+
+### Usage
+
+#### Development Server
+
+To run the project, follow these steps:
+
+1. Start the development server by executing the command:
+
+   ```bash
+   npm run dev
+   ```
+
+2. Open a web browser and navigate to [`http://localhost:3000`](https://localhost:3000/) to view the project's home page.
+
+#### Running Tests
+
+To run tests, simply run the following command:
 
 ```bash
-npm install
+npm run test
 ```
 
-## Running Locally
-
-Once everything is set up, you can run the project development server locally
-
-### Development Server
-
-To run the development server, run the following command
-
-```bash
-npm run dev
-```
-
-Open [https://localhost:3000/](https://localhost:3000/) in your browser to see the web page.
-
-## Acknowledgments
+## Acknowledgements
 
 - Thanks to [@greelogix](https://www.figma.com/@greelogix) for the [awesome design](https://www.figma.com/community/file/1046003088918145953)
 - [How to write a Good readme](https://bulldogjob.com/news/449-how-to-write-a-good-readme-for-your-github-project)

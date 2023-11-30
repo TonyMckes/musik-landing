@@ -1,65 +1,60 @@
-import Splide from '@splidejs/splide'
-import '@splidejs/splide/css'
-import './style.css'
+import Splide from "@splidejs/splide";
+import "@splidejs/splide/css";
+import "./style.css";
 
-document.addEventListener('DOMContentLoaded', function () {
-  new Splide('#slider1', {
-    width: '100vw',
-    perPage: 5,
-    gap: '2rem',
-    type: 'loop',
-    focus: 'center',
+document.addEventListener("DOMContentLoaded", function () {
+  new Splide("#slider1", {
+    gap: "2rem",
+    type: "loop",
+    focus: "center",
     isNavigation: true,
+    autoplay: true,
     speed: 250,
+    perPage: 3.5,
     breakpoints: {
+      425: {
+        perPage: 1,
+        padding: "1rem",
+      },
       768: {
         perPage: 2,
       },
-      1024: {
+    },
+  }).mount();
+
+  new Splide("#slider2", {
+    gap: "2rem",
+    type: "loop",
+    focus: "center",
+    isNavigation: true,
+    autoplay: true,
+    speed: 250,
+    perPage: 2,
+    breakpoints: {
+      425: {
+        perPage: 1,
+        padding: "1rem",
+      },
+      768: {
+        perPage: 1.5,
+      },
+    },
+  }).mount();
+  new Splide("#slider3", {
+    gap: "2rem",
+    type: "loop",
+    focus: "center",
+    isNavigation: true,
+    autoplay: true,
+    speed: 250,
+    perPage: 5,
+    breakpoints: {
+      425: {
+        perPage: 1,
+      },
+      768: {
         perPage: 3,
       },
     },
-    // rewind: true,
-  }).mount()
-
-  new Splide('#slider2', {
-    // width: '100vw',
-    fixedWidth: '50%',
-    perPage: 2.5,
-    gap: '2rem',
-    type: 'loop',
-    focus: 'center',
-    isNavigation: true,
-
-    speed: 250,
-    // breakpoints: {
-    //   768: {
-    //     perPage: 2,
-    //   },
-    //   1024: {
-    //     perPage: 3,
-    //   },
-    // },
-    // rewind: true,
-  }).mount()
-  new Splide('#slider3', {
-    // width: '100vw',
-    // fixedWidth: '50%',
-    perPage: 5,
-    gap: '2rem',
-    type: 'loop',
-    focus: 'center',
-    isNavigation: true,
-
-    speed: 250,
-    // breakpoints: {
-    //   768: {
-    //     perPage: 2,
-    //   },
-    //   1024: {
-    //     perPage: 3,
-    //   },
-    // },
-    // rewind: true,
-  }).mount()
-})
+  }).mount();
+});

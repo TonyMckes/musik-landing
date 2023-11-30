@@ -15,64 +15,70 @@
   <script src="https://code.iconify.design/3/3.0.1/iconify.min.js"></script>
 
   <body>
-    <main class="">
-      <section
-        class="flex flex-col items-center justify-between h-screen bg-no-repeat bg-cover bg-[url('/images/background.webp')]"
+    <header class="absolute top-0 container w-full py-4" >
+      <nav
+        class="flex items-center justify-between text-sm font-semibold text-white"
       >
-        <nav
-          class="flex items-center justify-between w-4/5 text-sm font-semibold text-white"
-        >
-          <a class="grow" href="#">
-            <img loading="lazy" src="/logo.svg" alt="" />
-          </a>
-          <ul class="flex items-center gap-8">
-            <li><a class="" href="#">Home</a></li>
-            <li><a class="" href="#">Speakers</a></li>
-            <li><a class="" href="#">Schedule</a></li>
-            <li><a class="" href="#">Contact Us</a></li>
-            <li>
-              <button class="px-8 py-4 font-bold bg-white rounded-lg text-blue">
-                Get Tickets
+        <a class="grow" href="#">
+          <img class="w-24" loading="lazy" src="/logo.svg" alt="" />
+        </a>
+        <ul class="md:flex items-center gap-8 hidden">
+          <li><a class="" href="#">Home</a></li>
+          <li><a class="" href="#">Speakers</a></li>
+          <li><a class="" href="#">Schedule</a></li>
+          <li><a class="" href="#">Contact Us</a></li>
+          <li>
+            <button class="px-8 py-4 font-bold bg-white rounded-lg text-blue">
+              Get Tickets
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    
+    <main class="space-y-20">
+      <section
+        class="bg-no-repeat bg-cover bg-[url('/images/background.webp')]"
+      >
+        <div class="flex flex-col items-center justify-between">
+          <header class="md:w-2/3 px-4 space-y-10 mt-10 text-center py-20">
+            <h1 class="font-bold text-white text-5xl md:text-7xl">
+              The Best experience of
+              <span class="text-light-pink">music</span> in 2021
+            </h1>
+            <p class="md:text-2xl text-xl text-white">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+              vitae ligula placerat, eleifend ex non, vehicula libero. Suspendisse
+              eget tellus lectus.
+            </p>
+            <div class="gap-4 justify-center md:gap-10 flex items-center flex-col md:flex-row">
+              <button class="px-8 py-4 font-bold text-white rounded-lg bg-red">
+                Get Started
               </button>
-            </li>
-          </ul>
-        </nav>
-        <div class="w-2/3 space-y-10 text-center">
-          <h1 class="font-bold text-white text-7xl">
-            The Best experience of
-            <span class="text-light-pink">music</span> in 2021
-          </h1>
-          <p class="text-2xl text-white">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-            vitae ligula placerat, eleifend ex non, vehicula libero. Suspendisse
-            eget tellus lectus.
-          </p>
-          <div class="space-x-10">
-            <button class="px-8 py-4 font-bold text-white rounded-lg bg-red">
-              Get Started
-            </button>
-            <button class="text-xl font-bold text-white">
-              <span
-                class="inline iconify w-14 h-14"
-                data-icon="material-symbols:play-circle-outline-rounded"
-              ></span>
-              Watch Video
-            </button>
+              <button class="text-xl font-bold text-white pr-4 md:pr-0">
+                <span
+                  class="inline iconify w-14 h-14"
+                  data-icon="material-symbols:play-circle-outline-rounded"
+                ></span>
+                Watch Video
+              </button>
+            </div>
+          </header>
+          <div
+            class="mt-12 p-10 text-center text-white/0 font-bold whitespace-nowrap font-stroke text-3xl md:text-5xl lg:text-7xl xl:text-[9rem]"
+          >
+            22d 13h 46m 18s
           </div>
         </div>
-        <div
-          class="text-center text-white/0 font-bold whitespace-nowrap font-stroke text-[9rem]"
-        >
-          22d 13h 46m 18s
-        </div>
       </section>
+
       <section
         class="my-40 space-y-20 splide"
         id="slider1"
         aria-label="Splide Basic HTML Example"
       >
         <h2
-          class="w-4/5 mx-auto text-4xl font-bold text-black"
+          class="container text-4xl font-bold text-black"
           id="carousel-heading"
         >
           <span class="text-blue">Explore</span> By Category
@@ -151,300 +157,313 @@
           </ul>
         </div>
       </section>
-      <section class="flex items-center w-4/5 mx-auto">
-        <div class="relative w-1/2 mr-20">
-          <!-- <img loading="lazy"  class="object-cover" src="/images/images-photos.webp" alt="" /> -->
-          <img
-            loading="lazy"
-            class="mt-14 ml-14"
-            src="/images/img-photo.webp"
-            alt=""
-          />
-          <img
-            loading="lazy"
-            aria-hidden="true"
-            class="absolute top-0 -z-10"
-            src="/images/img-hands.webp"
-            alt=""
-          />
-        </div>
-        <div class="w-1/2 space-y-10">
-          <h2 class="text-4xl font-bold">About Musik</h2>
-          <p class="text-black/70">
-            Fusce justo mi, vehicula id arcu et, dapibus tristique lectus.
-            Vivamus a elit sodales, tincidunt nunc non, maximus lacus. Fusce a
-            augue sed dolor auctor iaculis vitae id mauris. Integer ut lectus
-            non neque suscipit luctus. Mauris et erat id ipsum condimentum
-            cursus. Sed tempus enim non massa mattis iaculis. In quis massa
-            risus
-          </p>
-          <button
-            class="flex items-center gap-2 px-6 py-4 !mt-20 font-bold text-white rounded-lg bg-blue"
-          >
-            Learn More
-            <span
-              class="inline w-5 h-5 iconify"
-              data-icon="material-symbols:arrow-forward"
-            ></span>
-          </button>
-        </div>
-      </section>
-      <section class="flex items-center w-4/5 mx-auto">
-        <div class="w-2/5 space-y-10">
-          <h2 class="text-4xl font-bold">Singers</h2>
-          <p class="text-black/70">
-            Fusce justo mi, vehicula id arcu et, dapibus tristique lectus.
-            Vivamus a elit sodales, tincidunt nunc non, maximus lacus. Fusce a
-            augue sed dolor auctor iaculis vitae id mauris. Integer ut lectus
-            non neque suscipit luctus. Mauris et erat id ipsum condimentum
-            cursus. Sed tempus enim non massa mattis iaculis. In quis massa
-            risus
-          </p>
-          <button
-            class="flex items-center gap-2 px-6 py-4 !mt-20 font-bold text-white rounded-lg bg-blue"
-          >
-            View All Singers
-            <span
-              class="inline w-5 h-5 iconify"
-              data-icon="material-symbols:arrow-forward"
-            ></span>
-          </button>
-        </div>
-        <div class="w-3/5">
-          <img loading="lazy" src="/portail/Images.webp" alt="" />
-        </div>
-      </section>
-      <section class="h-screen bg-gradient-to-b from-blue/5 to-transparent">
-        <div class="w-4/5 mx-auto">
-          <h2 class="text-4xl font-bold">Event Schedule</h2>
-          <table class="rounded-lg font-bold ring-[1px] ring-a1 text-left">
-            <thead class="text-2xl bg-blue/5">
-              <tr class="text-left">
-                <th class="px-4 py-6 rounded-tl-lg">Time</th>
-                <th class="px-4 py-6">Content</th>
-                <th class="px-4 py-6">Speakers</th>
-                <th class="px-4 py-6 rounded-tr-lg"></th>
-              </tr>
-            </thead>
 
-            <tbody class="">
-              <tr class="border">
-                <td class="px-4 font-normal rounded-bl-lg whitespace-nowrap">
-                  11:00 AM to 12:00 PM
-                </td>
-
-                <td class="w-1/3 px-4">
-                  Vestibulum vel eros vel metus lacinia feugiat a nec metus.
-                </td>
-
-                <td class="px-4 py-8 rounded-br-lg whitespace-nowrap">
-                  <div class="flex items-center gap-2">
-                    <img
-                      loading="lazy"
-                      class="h-14"
-                      src="/avatars-sm/Avatar-2.webp"
-                      alt=""
-                    />
-                    <div class="">
-                      <h5 class="">Yui Ronald</h5>
-                      <h6 class="font-normal text-black/50">
-                        Booth: <span class="font-bold">2F12</span>
-                      </h6>
-                    </div>
-                  </div>
-                </td>
-                <td class="px-4">
-                  <button class="">Preview ></button>
-                </td>
-              </tr>
-              <!--  -->
-              <tr class="border">
-                <td class="px-4 font-normal rounded-bl-lg whitespace-nowrap">
-                  12:00 PM to 03:00 PM
-                </td>
-
-                <td class="w-1/3 px-4">
-                  Duis nec sodales nibh. Proin lectus tortor, rutrum vel
-                  vulputate vitae, fringilla id magna. Vestibulum ornare eget
-                  urna nec pulvinar. Praesent porttitor convallis blandit. Fusce
-                  vel egestas dolor. Donec eu augue enim. Donec rutrum non lacus
-                  ac rhoncus. Morbi quis luctus leo, nec cursus ex.
-                </td>
-
-                <td class="px-4 py-8 space-y-8 rounded-br-lg whitespace-nowrap">
-                  <div class="flex items-center gap-2">
-                    <img
-                      loading="lazy"
-                      class="h-14"
-                      src="/avatars-sm/Avatar-1.webp"
-                      alt=""
-                    />
-                    <div>
-                      <h5 class="">Bob John</h5>
-                      <h6 class="font-normal text-black/50">
-                        Booth: <span class="font-bold">3G12</span>
-                      </h6>
-                    </div>
-                  </div>
-                  <div class="flex items-center gap-2">
-                    <img
-                      loading="lazy"
-                      class="h-14"
-                      src="/avatars-sm/Avatar-2.webp"
-                      alt=""
-                    />
-                    <div>
-                      <h5 class="">Yui Ronald</h5>
-                      <h6 class="font-normal text-black/50">
-                        Booth: <span class="font-bold">2F12</span>
-                      </h6>
-                    </div>
-                  </div>
-                  <div class="flex items-center gap-2">
-                    <img
-                      loading="lazy"
-                      class="h-14"
-                      src="/avatars-sm/Avatar-3.webp"
-                      alt=""
-                    />
-                    <div>
-                      <h5 class="">Emma Satoshi</h5>
-                      <h6 class="font-normal text-black/50">
-                        Booth: <span class="font-bold">2A35</span>
-                      </h6>
-                    </div>
-                  </div>
-                </td>
-                <td class="px-4">
-                  <button class="text-red">Live ></button>
-                </td>
-              </tr>
-              <!--  -->
-              <tr class="border">
-                <td class="px-4 font-normal rounded-bl-lg whitespace-nowrap">
-                  03:00 PM to 04:00 PM
-                </td>
-
-                <td class="w-1/3 px-4">
-                  Vestibulum vel eros vel metus lacinia feugiat a nec metus.
-                </td>
-
-                <td class="px-4 py-8 space-y-8 rounded-br-lg whitespace-nowrap">
-                  <div class="flex items-center gap-2">
-                    <img
-                      loading="lazy"
-                      class="h-14"
-                      src="/avatars-sm/Avatar-4.webp"
-                      alt=""
-                    />
-                    <div>
-                      <h5 class="">Sasha Jackson</h5>
-                      <h6 class="font-normal text-black/50">
-                        Booth: <span class="font-bold">2F18</span>
-                      </h6>
-                    </div>
-                  </div>
-                  <div class="flex items-center gap-2">
-                    <img
-                      loading="lazy"
-                      class="h-14"
-                      src="/avatars-sm/Avatar-5.webp"
-                      alt=""
-                    />
-                    <div>
-                      <h5 class="">Diana Brock</h5>
-                      <h6 class="font-normal text-black/50">
-                        Booth: <span class="font-bold">2F24</span>
-                      </h6>
-                    </div>
-                  </div>
-                </td>
-                <td class="px-4">
-                  <button class="">Upcoming ></button>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </section>
-      <section class="flex flex-col w-4/5 gap-12 mx-auto text-center">
-        <h2 class="text-4xl font-bold">Event Schedule</h2>
-        <div class="flex justify-center gap-8">
-          <div
-            class="px-8 lg:px-12 py-4 text-center space-y-4 bg-white drop-shadow-2xl border-t-2 border-black rounded-[1.25rem]"
-          >
-            <h3 class="text-2xl font-bold text-black">Basic</h3>
-            <span class="block text-6xl font-bold text-black">$100</span>
-            <ul>
-              <li class="text-black">1 Seat Available</li>
-              <li class="text-black/50">Access to Wifi Router</li>
-              <li class="text-black/50">Free Food & Coffee</li>
-            </ul>
-            <button
-              class="px-8 py-4 font-bold bg-white border rounded-lg whitespace-nowrap text-blue border-blue hover:bg-blue hover:text-white"
-            >
-              Get Tickets
-            </button>
+      <section>
+        <div
+          class="container flex flex-col-reverse gap-y-10 md:flex-row items-center"
+        >
+          <div class="relative md:w-1/2 mr-20">
+            <img
+              loading="lazy"
+              class="mt-14 ml-14"
+              src="/images/img-photo.webp"
+              alt=""
+            />
+            <img
+              loading="lazy"
+              aria-hidden="true"
+              class="absolute top-0 -z-10"
+              src="/images/img-hands.webp"
+              alt=""
+            />
           </div>
-          <div
-            class="px-8 lg:px-12 py-4 text-center space-y-4 bg-white drop-shadow-2xl border-t-2 border-blue rounded-[1.25rem]"
-          >
-            <h3 class="text-2xl font-bold text-blue">Standard</h3>
-            <span class="block text-6xl font-bold text-blue">$150</span>
-            <ul>
-              <li class="text-black">1 Seat Available</li>
-              <li class="text-black">Access to Wifi Router</li>
-              <li class="text-black/50">Free Food & Coffee</li>
-            </ul>
+          <div class="md:w-1/2 space-y-10">
+            <h2 class="text-4xl font-bold">About Musik</h2>
+            <p class="text-black/70">
+              Fusce justo mi, vehicula id arcu et, dapibus tristique lectus.
+              Vivamus a elit sodales, tincidunt nunc non, maximus lacus. Fusce a
+              augue sed dolor auctor iaculis vitae id mauris. Integer ut lectus
+              non neque suscipit luctus. Mauris et erat id ipsum condimentum
+              cursus. Sed tempus enim non massa mattis iaculis. In quis massa
+              risus
+            </p>
             <button
-              class="px-8 py-4 font-bold bg-white border rounded-lg whitespace-nowrap text-blue border-blue hover:bg-blue hover:text-white"
+              class="flex items-center gap-2 px-6 py-4 !mt-20 font-bold text-white rounded-lg bg-blue"
             >
-              Get Tickets
-            </button>
-          </div>
-          <div
-            class="px-8 lg:px-12 py-4 text-center space-y-4 bg-white drop-shadow-2xl border-t-2 border-red rounded-[1.25rem]"
-          >
-            <h3 class="text-2xl font-bold text-red">Premium</h3>
-            <span class="block text-6xl font-bold text-red">$200</span>
-            <ul>
-              <li class="text-black">1 Seat Available</li>
-              <li class="text-black">Access to Wifi Router</li>
-              <li class="text-black">Free Food & Coffee</li>
-            </ul>
-            <button
-              class="px-8 py-4 font-bold bg-white border rounded-lg whitespace-nowrap text-blue border-blue hover:bg-blue hover:text-white"
-            >
-              Get Tickets
+              Learn More
+              <span
+                class="inline w-5 h-5 iconify"
+                data-icon="material-symbols:arrow-forward"
+              ></span>
             </button>
           </div>
         </div>
       </section>
-      <section class="w-4/5 mx-auto">
-        <h2 class="text-4xl font-bold">Our Sponsors</h2>
-        <ul class="grid grid-cols-4 gap-8">
-          <li><img loading="lazy" src="/logos/Img.svg" alt="" /></li>
-          <li><img loading="lazy" src="/logos/Img-1.svg" alt="" /></li>
-          <li><img loading="lazy" src="/logos/Img-2.svg" alt="" /></li>
-          <li><img loading="lazy" src="/logos/Img-3.svg" alt="" /></li>
-          <li><img loading="lazy" src="/logos/Img-4.svg" alt="" /></li>
-          <li><img loading="lazy" src="/logos/Img-5.svg" alt="" /></li>
-          <li><img loading="lazy" src="/logos/Img-6.svg" alt="" /></li>
-          <li><img loading="lazy" src="/logos/Img-7.svg" alt="" /></li>
-        </ul>
+
+      <section>
+        <div class="container flex flex-col md:flex-row items-center">
+          <div class="md:w-2/5 space-y-10">
+            <h2 class="text-4xl font-bold">Singers</h2>
+            <p class="text-black/70">
+              Fusce justo mi, vehicula id arcu et, dapibus tristique lectus.
+              Vivamus a elit sodales, tincidunt nunc non, maximus lacus. Fusce a
+              augue sed dolor auctor iaculis vitae id mauris. Integer ut lectus
+              non neque suscipit luctus. Mauris et erat id ipsum condimentum
+              cursus. Sed tempus enim non massa mattis iaculis. In quis massa
+              risus
+            </p>
+            <button
+              class="flex items-center gap-2 px-6 py-4 !mt-20 font-bold text-white rounded-lg bg-blue"
+            >
+              View All Singers
+              <span
+                class="inline w-5 h-5 iconify"
+                data-icon="material-symbols:arrow-forward"
+              ></span>
+            </button>
+          </div>
+          <div class="md:w-3/5">
+            <img loading="lazy" src="/portail/Images.webp" alt="" />
+          </div>
+        </div>
       </section>
+
+      <section class="bg-gradient-to-b from-blue/5 to-transparent">
+        <div class="container">
+          <h2 class="text-4xl font-bold py-10">Event Schedule</h2>
+          <div class="overflow-x-auto">
+            <table class="rounded-lg font-bold ring-[1px] ring-a1 text-left">
+              <thead class="text-2xl bg-blue/5">
+                <tr class="text-left">
+                  <th class="px-4 py-6 rounded-tl-lg">Time</th>
+                  <th class="px-4 py-6">Content</th>
+                  <th class="px-4 py-6">Speakers</th>
+                  <th class="px-4 py-6 rounded-tr-lg"></th>
+                </tr>
+              </thead>
+              <tbody class="">
+                <tr class="border">
+                  <td class="px-4 font-normal rounded-bl-lg whitespace-nowrap">
+                    11:00 AM to 12:00 PM
+                  </td>
+                  <td class="w-1/3 px-4">
+                    Vestibulum vel eros vel metus lacinia feugiat a nec metus.
+                  </td>
+                  <td class="px-4 py-8 rounded-br-lg whitespace-nowrap">
+                    <div class="flex items-center gap-2">
+                      <img
+                        loading="lazy"
+                        class="h-14"
+                        src="/avatars-sm/Avatar-2.webp"
+                        alt=""
+                      />
+                      <div class="">
+                        <h5 class="">Yui Ronald</h5>
+                        <h6 class="font-normal text-black/50">
+                          Booth: <span class="font-bold">2F12</span>
+                        </h6>
+                      </div>
+                    </div>
+                  </td>
+                  <td class="px-4">
+                    <button class="">Preview ></button>
+                  </td>
+                </tr>
+                <!--  -->
+                <tr class="border">
+                  <td class="px-4 font-normal rounded-bl-lg whitespace-nowrap">
+                    12:00 PM to 03:00 PM
+                  </td>
+                  <td class="w-1/3 px-4">
+                    Duis nec sodales nibh. Proin lectus tortor, rutrum vel
+                    vulputate vitae, fringilla id magna. Vestibulum ornare eget
+                    urna nec pulvinar. Praesent porttitor convallis blandit.
+                    Fusce vel egestas dolor. Donec eu augue enim. Donec rutrum
+                    non lacus ac rhoncus. Morbi quis luctus leo, nec cursus ex.
+                  </td>
+                  <td
+                    class="px-4 py-8 space-y-8 rounded-br-lg whitespace-nowrap"
+                  >
+                    <div class="flex items-center gap-2">
+                      <img
+                        loading="lazy"
+                        class="h-14"
+                        src="/avatars-sm/Avatar-1.webp"
+                        alt=""
+                      />
+                      <div>
+                        <h5 class="">Bob John</h5>
+                        <h6 class="font-normal text-black/50">
+                          Booth: <span class="font-bold">3G12</span>
+                        </h6>
+                      </div>
+                    </div>
+                    <div class="flex items-center gap-2">
+                      <img
+                        loading="lazy"
+                        class="h-14"
+                        src="/avatars-sm/Avatar-2.webp"
+                        alt=""
+                      />
+                      <div>
+                        <h5 class="">Yui Ronald</h5>
+                        <h6 class="font-normal text-black/50">
+                          Booth: <span class="font-bold">2F12</span>
+                        </h6>
+                      </div>
+                    </div>
+                    <div class="flex items-center gap-2">
+                      <img
+                        loading="lazy"
+                        class="h-14"
+                        src="/avatars-sm/Avatar-3.webp"
+                        alt=""
+                      />
+                      <div>
+                        <h5 class="">Emma Satoshi</h5>
+                        <h6 class="font-normal text-black/50">
+                          Booth: <span class="font-bold">2A35</span>
+                        </h6>
+                      </div>
+                    </div>
+                  </td>
+                  <td class="px-4">
+                    <button class="text-red">Live ></button>
+                  </td>
+                </tr>
+                <!--  -->
+                <tr class="border">
+                  <td class="px-4 font-normal rounded-bl-lg whitespace-nowrap">
+                    03:00 PM to 04:00 PM
+                  </td>
+                  <td class="w-1/3 px-4">
+                    Vestibulum vel eros vel metus lacinia feugiat a nec metus.
+                  </td>
+                  <td
+                    class="px-4 py-8 space-y-8 rounded-br-lg whitespace-nowrap"
+                  >
+                    <div class="flex items-center gap-2">
+                      <img
+                        loading="lazy"
+                        class="h-14"
+                        src="/avatars-sm/Avatar-4.webp"
+                        alt=""
+                      />
+                      <div>
+                        <h5 class="">Sasha Jackson</h5>
+                        <h6 class="font-normal text-black/50">
+                          Booth: <span class="font-bold">2F18</span>
+                        </h6>
+                      </div>
+                    </div>
+                    <div class="flex items-center gap-2">
+                      <img
+                        loading="lazy"
+                        class="h-14"
+                        src="/avatars-sm/Avatar-5.webp"
+                        alt=""
+                      />
+                      <div>
+                        <h5 class="">Diana Brock</h5>
+                        <h6 class="font-normal text-black/50">
+                          Booth: <span class="font-bold">2F24</span>
+                        </h6>
+                      </div>
+                    </div>
+                  </td>
+                  <td class="px-4">
+                    <button class="">Upcoming ></button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="container space-y-6">
+          <h2 class="text-4xl font-bold my-10 text-center">Event Schedule</h2>
+          <div class="flex justify-center gap-8 flex-col md:flex-row">
+            <div
+              class="px-8 lg:px-12 py-4 text-center space-y-4 bg-white drop-shadow-2xl border-t-2 border-black rounded-[1.25rem]"
+            >
+              <h3 class="text-2xl font-bold text-black">Basic</h3>
+              <span class="block text-6xl font-bold text-black">$100</span>
+              <ul>
+                <li class="text-black">1 Seat Available</li>
+                <li class="text-black/50">Access to Wifi Router</li>
+                <li class="text-black/50">Free Food & Coffee</li>
+              </ul>
+              <button
+                class="px-8 py-4 font-bold bg-white border rounded-lg whitespace-nowrap text-blue border-blue hover:bg-blue hover:text-white"
+              >
+                Get Tickets
+              </button>
+            </div>
+            <div
+              class="px-8 lg:px-12 py-4 text-center space-y-4 bg-white drop-shadow-2xl border-t-2 border-blue rounded-[1.25rem]"
+            >
+              <h3 class="text-2xl font-bold text-blue">Standard</h3>
+              <span class="block text-6xl font-bold text-blue">$150</span>
+              <ul>
+                <li class="text-black">1 Seat Available</li>
+                <li class="text-black">Access to Wifi Router</li>
+                <li class="text-black/50">Free Food & Coffee</li>
+              </ul>
+              <button
+                class="px-8 py-4 font-bold bg-white border rounded-lg whitespace-nowrap text-blue border-blue hover:bg-blue hover:text-white"
+              >
+                Get Tickets
+              </button>
+            </div>
+            <div
+              class="px-8 lg:px-12 py-4 text-center space-y-4 bg-white drop-shadow-2xl border-t-2 border-red rounded-[1.25rem]"
+            >
+              <h3 class="text-2xl font-bold text-red">Premium</h3>
+              <span class="block text-6xl font-bold text-red">$200</span>
+              <ul>
+                <li class="text-black">1 Seat Available</li>
+                <li class="text-black">Access to Wifi Router</li>
+                <li class="text-black">Free Food & Coffee</li>
+              </ul>
+              <button
+                class="px-8 py-4 font-bold bg-white border rounded-lg whitespace-nowrap text-blue border-blue hover:bg-blue hover:text-white"
+              >
+                Get Tickets
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="container pb-10">
+          <h2 class="text-4xl font-bold">Our Sponsors</h2>
+          <ul class="grid grid-cols-2 md:grid-cols-4 gap-x-8 gap-y-12 mt-20">
+            <li><img loading="lazy" src="/logos/Img.svg" alt="" /></li>
+            <li><img loading="lazy" src="/logos/Img-1.svg" alt="" /></li>
+            <li><img loading="lazy" src="/logos/Img-2.svg" alt="" /></li>
+            <li><img loading="lazy" src="/logos/Img-3.svg" alt="" /></li>
+            <li><img loading="lazy" src="/logos/Img-4.svg" alt="" /></li>
+            <li><img loading="lazy" src="/logos/Img-5.svg" alt="" /></li>
+            <li><img loading="lazy" src="/logos/Img-6.svg" alt="" /></li>
+            <li><img loading="lazy" src="/logos/Img-7.svg" alt="" /></li>
+          </ul>
+        </div>
+      </section>
+
       <section
-        class="my-40 space-y-20 splide"
+        class="splide"
         id="slider2"
         aria-label="Splide Basic HTML Example"
       >
         <h2
-          class="w-4/5 mx-auto text-4xl font-bold text-black"
+          class="container my-10 text-4xl font-bold text-black"
           id="carousel-heading"
         >
           Testimonials
         </h2>
-
         <div class="splide__track">
           <div class="hidden splide__arrows"></div>
           <ul class="splide__list">
@@ -502,13 +521,14 @@
           </ul>
         </div>
       </section>
+
       <section
-        class="my-40 space-y-20 splide"
+        class="splide"
         id="slider3"
         aria-label="Splide Basic HTML Example"
       >
         <h2
-          class="w-4/5 mx-auto text-4xl font-bold text-black"
+          class="container my-10 text-4xl font-bold text-black"
           id="carousel-heading"
         >
           See our Best Shots
@@ -523,267 +543,284 @@
             >
               <img
                 loading="lazy"
-                class="aspect-square"
+                class="aspect-square w-full lg:w-auto"
                 src="/music/Img.webp"
                 alt=""
               />
-              <div class="space-x-4 font-bold">
-                <button>
-                  <span
-                    class="inline w-5 h-5 iconify"
-                    data-icon="material-symbols:favorite-outline-rounded"
-                  ></span>
-                  412
-                </button>
-                <button>
-                  <span
-                    class="inline w-5 h-5 iconify"
-                    data-icon="material-symbols:mode-comment-outline-rounded"
-                  ></span>
-                  140
-                </button>
+              <div class="px-4 md:p-0">
+                <div class="space-x-4 font-bold">
+                  <button>
+                    <span
+                      class="inline w-5 h-5 iconify"
+                      data-icon="material-symbols:favorite-outline-rounded"
+                    ></span>
+                    412
+                  </button>
+                  <button>
+                    <span
+                      class="inline w-5 h-5 iconify"
+                      data-icon="material-symbols:mode-comment-outline-rounded"
+                    ></span>
+                    140
+                  </button>
+                </div>
+                <h5>Lorem Ipsum Amet</h5>
+                <ul class="flex flex-wrap gap-x-2 text-black/50">
+                  <li>#music</li>
+                  <li>#concert</li>
+                  <li>#conference</li>
+                  <li>#london</li>
+                  <li>#event</li>
+                  <li>#artist</li>
+                  <li>#dj</li>
+                  <li>#soundtrack</li>
+                  <li>#dance</li>
+                </ul>
               </div>
-              <h5>Lorem Ipsum Amet</h5>
-              <ul class="flex flex-wrap gap-x-2 text-black/50">
-                <li>#music</li>
-                <li>#concert</li>
-                <li>#conference</li>
-                <li>#london</li>
-                <li>#event</li>
-                <li>#artist</li>
-                <li>#dj</li>
-                <li>#soundtrack</li>
-                <li>#dance</li>
-              </ul>
             </li>
             <li
               class="relative !border-none splide__slide [&:is(.is-active,.is-prev,.is-next)]:opacity-100 opacity-50 transition-opacity space-y-4"
             >
               <img
                 loading="lazy"
-                class="aspect-square"
+                class="aspect-square w-full lg:w-auto"
                 src="/music/Img-1.webp"
                 alt=""
               />
-              <div class="space-x-4 font-bold">
-                <button>
-                  <span
-                    class="inline w-5 h-5 iconify"
-                    data-icon="material-symbols:favorite-outline-rounded"
-                  ></span>
-                  412
-                </button>
-                <button>
-                  <span
-                    class="inline w-5 h-5 iconify"
-                    data-icon="material-symbols:mode-comment-outline-rounded"
-                  ></span>
-                  140
-                </button>
+              <div class="px-4 md:p-0">
+                <div class="space-x-4 font-bold">
+                  <button>
+                    <span
+                      class="inline w-5 h-5 iconify"
+                      data-icon="material-symbols:favorite-outline-rounded"
+                    ></span>
+                    412
+                  </button>
+                  <button>
+                    <span
+                      class="inline w-5 h-5 iconify"
+                      data-icon="material-symbols:mode-comment-outline-rounded"
+                    ></span>
+                    140
+                  </button>
+                </div>
+                <h5>Lorem Ipsum Amet</h5>
+                <ul class="flex flex-wrap gap-x-2 text-black/50">
+                  <li>#music</li>
+                  <li>#concert</li>
+                  <li>#conference</li>
+                  <li>#london</li>
+                  <li>#event</li>
+                  <li>#artist</li>
+                  <li>#dj</li>
+                  <li>#soundtrack</li>
+                  <li>#dance</li>
+                </ul>
               </div>
-              <h5>Lorem Ipsum Amet</h5>
-              <ul class="flex flex-wrap gap-x-2 text-black/50">
-                <li>#music</li>
-                <li>#concert</li>
-                <li>#conference</li>
-                <li>#london</li>
-                <li>#event</li>
-                <li>#artist</li>
-                <li>#dj</li>
-                <li>#soundtrack</li>
-                <li>#dance</li>
-              </ul>
             </li>
             <li
               class="relative !border-none splide__slide [&:is(.is-active,.is-prev,.is-next)]:opacity-100 opacity-50 transition-opacity space-y-4"
             >
               <img
                 loading="lazy"
-                class="aspect-square"
+                class="aspect-square w-full lg:w-auto"
                 src="/music/Img-2.webp"
                 alt=""
               />
-              <div class="space-x-4 font-bold">
-                <button>
-                  <span
-                    class="inline w-5 h-5 iconify"
-                    data-icon="material-symbols:favorite-outline-rounded"
-                  ></span>
-                  412
-                </button>
-                <button>
-                  <span
-                    class="inline w-5 h-5 iconify"
-                    data-icon="material-symbols:mode-comment-outline-rounded"
-                  ></span>
-                  140
-                </button>
+              <div class="px-4 md:p-0">
+                <div class="space-x-4 font-bold">
+                  <button>
+                    <span
+                      class="inline w-5 h-5 iconify"
+                      data-icon="material-symbols:favorite-outline-rounded"
+                    ></span>
+                    412
+                  </button>
+                  <button>
+                    <span
+                      class="inline w-5 h-5 iconify"
+                      data-icon="material-symbols:mode-comment-outline-rounded"
+                    ></span>
+                    140
+                  </button>
+                </div>
+                <h5>Lorem Ipsum Amet</h5>
+                <ul class="flex flex-wrap gap-x-2 text-black/50">
+                  <li>#music</li>
+                  <li>#concert</li>
+                  <li>#conference</li>
+                  <li>#london</li>
+                  <li>#event</li>
+                  <li>#artist</li>
+                  <li>#dj</li>
+                  <li>#soundtrack</li>
+                  <li>#dance</li>
+                </ul>
               </div>
-              <h5>Lorem Ipsum Amet</h5>
-              <ul class="flex flex-wrap gap-x-2 text-black/50">
-                <li>#music</li>
-                <li>#concert</li>
-                <li>#conference</li>
-                <li>#london</li>
-                <li>#event</li>
-                <li>#artist</li>
-                <li>#dj</li>
-                <li>#soundtrack</li>
-                <li>#dance</li>
-              </ul>
             </li>
             <li
               class="relative !border-none splide__slide [&:is(.is-active,.is-prev,.is-next)]:opacity-100 opacity-50 transition-opacity space-y-4"
             >
               <img
                 loading="lazy"
-                class="aspect-square"
+                class="aspect-square w-full lg:w-auto"
                 src="/music/Img-3.webp"
                 alt=""
               />
-              <div class="space-x-4 font-bold">
-                <button>
-                  <span
-                    class="inline w-5 h-5 iconify"
-                    data-icon="material-symbols:favorite-outline-rounded"
-                  ></span>
-                  412
-                </button>
-                <button>
-                  <span
-                    class="inline w-5 h-5 iconify"
-                    data-icon="material-symbols:mode-comment-outline-rounded"
-                  ></span>
-                  140
-                </button>
+              <div class="px-4 md:p-0">
+                <div class="space-x-4 font-bold">
+                  <button>
+                    <span
+                      class="inline w-5 h-5 iconify"
+                      data-icon="material-symbols:favorite-outline-rounded"
+                    ></span>
+                    412
+                  </button>
+                  <button>
+                    <span
+                      class="inline w-5 h-5 iconify"
+                      data-icon="material-symbols:mode-comment-outline-rounded"
+                    ></span>
+                    140
+                  </button>
+                </div>
+                <h5>Lorem Ipsum Amet</h5>
+                <ul class="flex flex-wrap gap-x-2 text-black/50">
+                  <li>#music</li>
+                  <li>#concert</li>
+                  <li>#conference</li>
+                  <li>#london</li>
+                  <li>#event</li>
+                  <li>#artist</li>
+                  <li>#dj</li>
+                  <li>#soundtrack</li>
+                  <li>#dance</li>
+                </ul>
               </div>
-              <h5>Lorem Ipsum Amet</h5>
-              <ul class="flex flex-wrap gap-x-2 text-black/50">
-                <li>#music</li>
-                <li>#concert</li>
-                <li>#conference</li>
-                <li>#london</li>
-                <li>#event</li>
-                <li>#artist</li>
-                <li>#dj</li>
-                <li>#soundtrack</li>
-                <li>#dance</li>
-              </ul>
             </li>
             <li
               class="relative !border-none splide__slide [&:is(.is-active,.is-prev,.is-next)]:opacity-100 opacity-50 transition-opacity space-y-4"
             >
               <img
                 loading="lazy"
-                class="aspect-square"
+                class="aspect-square w-full lg:w-auto"
                 src="/music/Img-4.webp"
                 alt=""
               />
-              <div class="space-x-4 font-bold">
-                <button>
-                  <span
-                    class="inline w-5 h-5 iconify"
-                    data-icon="material-symbols:favorite-outline-rounded"
-                  ></span>
-                  412
-                </button>
-                <button>
-                  <span
-                    class="inline w-5 h-5 iconify"
-                    data-icon="material-symbols:mode-comment-outline-rounded"
-                  ></span>
-                  140
-                </button>
+              <div class="px-4 md:p-0">
+                <div class="space-x-4 font-bold">
+                  <button>
+                    <span
+                      class="inline w-5 h-5 iconify"
+                      data-icon="material-symbols:favorite-outline-rounded"
+                    ></span>
+                    412
+                  </button>
+                  <button>
+                    <span
+                      class="inline w-5 h-5 iconify"
+                      data-icon="material-symbols:mode-comment-outline-rounded"
+                    ></span>
+                    140
+                  </button>
+                </div>
+                <h5>Lorem Ipsum Amet</h5>
+                <ul class="flex flex-wrap gap-x-2 text-black/50">
+                  <li>#music</li>
+                  <li>#concert</li>
+                  <li>#conference</li>
+                  <li>#london</li>
+                  <li>#event</li>
+                  <li>#artist</li>
+                  <li>#dj</li>
+                  <li>#soundtrack</li>
+                  <li>#dance</li>
+                </ul>
               </div>
-              <h5>Lorem Ipsum Amet</h5>
-              <ul class="flex flex-wrap gap-x-2 text-black/50">
-                <li>#music</li>
-                <li>#concert</li>
-                <li>#conference</li>
-                <li>#london</li>
-                <li>#event</li>
-                <li>#artist</li>
-                <li>#dj</li>
-                <li>#soundtrack</li>
-                <li>#dance</li>
-              </ul>
             </li>
           </ul>
         </div>
       </section>
-      <section class="flex">
-        <div class="flex flex-col w-2/5 p-10 text-white bg-blue">
-          <h2 class="text-4xl">Contact Us</h2>
-          <p class="text-white/70">
-            Have an inquiry? We’ll be happy to assist you
-          </p>
 
-          <ul class="mt-12 space-y-4">
-            <li><a href="#">+92 333 6527366</a></li>
-            <li><a href="#">abuzer@greelogix.com</a></li>
-            <li>
-              <a href="#">Plot 252, Block L Phase 2 Johar Town, Lahore, PK</a>
-            </li>
-          </ul>
-        </div>
-        <div class="w-3/5 py-10 px-20 bg-[#F8F8F8]">
-          <form class="flex flex-col w-11/12 gap-4">
-            <div class="flex flex-col group">
-              <label
-                class="text-xs font-bold text-black/70 group-focus-within:text-blue"
-                for="nameInput"
-                >Name</label
-              >
-              <input
-                id="nameInput"
-                placeholder="John Doe"
-                class="border-b-2 bg-[#F8F8F8] focus:border-b-blue outline-none py-1 text-black"
-                type="text"
-              />
-            </div>
-            <div class="flex flex-col group">
-              <label
-                class="text-xs font-bold text-black/70 group-focus-within:text-blue"
-                for="emailInput"
-                >Email</label
-              >
-              <input
-                id="emailInput"
-                placeholder="johndoe2347@mail.com"
-                class="border-b-2 bg-[#F8F8F8] focus:border-b-blue outline-none py-1 text-black"
-                type="email"
-              />
-            </div>
-            <div class="flex flex-col group">
-              <label
-                class="text-xs font-bold text-black/70 group-focus-within:text-blue"
-                for="textBody"
-                >Message</label
-              >
-              <textarea
-                placeholder="Duis nec sodales nibh. Proin lectus tortor, rutrum vel vulputate vitae, fringilla id magna. Vestibulum ornare eget urna nec pulvinar. Praesent porttitor convallis blandit. Fusce vel egestas dolor. Donec eu augue enim. Donec rutrum non lacus ac rhoncus. Morbi quis luctus leo, nec cursus ex"
-                class="border-b-2 bg-[#F8F8F8] focus:border-b-blue outline-none py-1 text-black"
-                name=""
-                id="textBody"
-                rows="10"
-                rows="6"
-              ></textarea>
-            </div>
-            <button class="px-8 py-4 font-bold text-white rounded-lg bg-blue">
-              Submit
-            </button>
-          </form>
+      <section
+        class="md:[background:_-webkit-linear-gradient(left,_rgb(56_29_219),_rgb(56_29_219)_43%,_#f8f8f8_30%,_#f8f8f8)] [background:_-webkit-linear-gradient(top,_rgb(56_29_219),_rgb(56_29_219)_40%,_#f8f8f8_30%,_#f8f8f8)]"
+      >
+        <div class="container flex flex-col md:flex-row">
+          <div class="flex flex-col md:w-2/5 py-10 md:p-10 text-white">
+            <h2 class="text-4xl">Contact Us</h2>
+            <p class="text-white/70">
+              Have an inquiry? We’ll be happy to assist you
+            </p>
+            <ul class="mt-12 space-y-4">
+              <li><a href="#">+92 333 6527366</a></li>
+              <li><a href="#">abuzer@greelogix.com</a></li>
+              <li>
+                <a href="#">Plot 252, Block L Phase 2 Johar Town, Lahore, PK</a>
+              </li>
+            </ul>
+          </div>
+          <div class="md:w-3/5 py-10 md:px-20">
+            <form class="flex flex-col md:w-11/12 gap-4">
+              <div class="flex flex-col group">
+                <label
+                  class="text-xs font-bold text-black/70 group-focus-within:text-blue"
+                  for="nameInput"
+                  >Name</label
+                >
+                <input
+                  id="nameInput"
+                  placeholder="John Doe"
+                  class="border-b-2 bg-[#F8F8F8] focus:border-b-blue outline-none py-1 text-black"
+                  type="text"
+                />
+              </div>
+              <div class="flex flex-col group">
+                <label
+                  class="text-xs font-bold text-black/70 group-focus-within:text-blue"
+                  for="emailInput"
+                  >Email</label
+                >
+                <input
+                  id="emailInput"
+                  placeholder="johndoe2347@mail.com"
+                  class="border-b-2 bg-[#F8F8F8] focus:border-b-blue outline-none py-1 text-black"
+                  type="email"
+                />
+              </div>
+              <div class="flex flex-col group">
+                <label
+                  class="text-xs font-bold text-black/70 group-focus-within:text-blue"
+                  for="textBody"
+                  >Message</label
+                >
+                <textarea
+                  placeholder="Duis nec sodales nibh. Proin lectus tortor, rutrum vel vulputate vitae, fringilla id magna. Vestibulum ornare eget urna nec pulvinar. Praesent porttitor convallis blandit. Fusce vel egestas dolor. Donec eu augue enim. Donec rutrum non lacus ac rhoncus. Morbi quis luctus leo, nec cursus ex"
+                  class="border-b-2 bg-[#F8F8F8] focus:border-b-blue outline-none py-1 text-black"
+                  name=""
+                  id="textBody"
+                  rows="10"
+                  rows="6"
+                ></textarea>
+              </div>
+              <button class="px-8 py-4 font-bold text-white rounded-lg bg-blue">
+                Submit
+              </button>
+            </form>
+          </div>
         </div>
       </section>
+
       <footer class="bg-black">
-        <div class="w-4/5 py-10 mx-auto">
+        <div class="container py-10">
           <a class="grow" href="#">
             <img loading="lazy" src="/logo.svg" alt="" />
           </a>
 
-          <div class="flex mt-10">
+          <div class="flex mt-10 items-end md:items-start">
             <nav>
-              <ul class="flex gap-4 text-sm font-bold text-white">
+              <ul
+                class="flex flex-col md:flex-row gap-4 text-sm font-bold text-white"
+              >
                 <li>Home</li>
                 <li>Company</li>
                 <li>Blog</li>
@@ -799,7 +836,7 @@
                 <li><a href="#" aria-label="Instagram"></a></li>
               </ul>
             </nav>
-            <p class="text-white/30">© musik.com, 2021</p>
+            <p class="text-white/30 text-right flex-1">© musik.com, 2021</p>
           </div>
         </div>
       </footer>
